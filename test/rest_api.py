@@ -3,9 +3,9 @@ import requests
 
 def sign_up():
     sign_up_url = "http://127.0.0.1:8956/Sign/Up"
-    email = input("Email : ")
-    user_name = input("User Name : ")
-    password = input("Password : ")
+    email = "go2ranuga@gmail.com"
+    user_name = "user name"
+    password = "password"
     result = requests.get(  # or post
         sign_up_url, {"Email": email, "Password": password, "User Name": user_name}
     )
@@ -38,8 +38,4 @@ def send_email():
     )
     print(result.json())
 
-
 sign_up()
-sign_in()
-send_email()
-log_out()
